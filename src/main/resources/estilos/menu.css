@@ -1,0 +1,58 @@
+/* --- Paleta de colores --- */
+.root {
+    -fx-font-family: 'Segoe UI', sans-serif;
+    -fx-base: #121212;
+}
+
+/* --- Fondo principal --- */
+.main-dashboard {
+    -fx-background-color: linear-gradient(to bottom right, #121212, #1e1e1e);
+}
+
+/* --- Título del logo --- */
+.logo-text {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-letter-spacing: 2px;
+}
+
+/* --- Botón Hamburguesa --- */
+.hamburger-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #00F5FF;
+    -fx-font-size: 28px;
+    -fx-cursor: hand;
+    -fx-padding: 0 10;
+}
+
+.hamburger-button:hover {
+    -fx-text-fill: #ffffff;
+}
+
+/* --- Contenedor del Menú Lateral --- */
+.sidebar-container {
+    -fx-background-color: #1a1a1a;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 20, 0, 0, 0);
+    /* Corrección importante: el menú ocupa toda la altura */
+    -fx-pref-height: 100%;
+}
+
+/* --- Botones --- */
+.nav-button, .nav-button-exit {
+    -fx-background-color: transparent;
+    -fx-font-size: 16px;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 10 20;
+    -fx-cursor: hand;
+    -fx-background-radius: 5;
+}
+
+.nav-button { -fx-text-fill: #e0e0e0; }
+.nav-button:hover { -fx-background-color: rgba(0, 245, 255, 0.1); -fx-text-fill: #00F5FF; }
+
+.nav-button-exit { -fx-text-fill: #ff6b6b; }
+.nav-button-exit:hover { -fx-background-color: rgba(255, 107, 107, 0.1); }
+
+.welcome-title { -fx-text-fill: #ffffff; -fx-font-size: 32px; -fx-font-weight: bold; }
+.welcome-sub { -fx-text-fill: #888888; -fx-font-size: 16px; }
