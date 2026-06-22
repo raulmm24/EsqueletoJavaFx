@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane styleClass="main-dashboard" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.iesalandalus.programacion.javafx.controladores.ClienteControlador"
+            stylesheets="@../estilos/menu.css">
+
+    <top>
+        <Label text="Mis Clientes" styleClass="welcome-title" style="-fx-padding: 20;"/>
+    </top>
+
+    <center>
+        <ScrollPane fitToWidth="true" style="-fx-background: transparent; -fx-background-color: transparent;">
+            <FlowPane fx:id="fpClientes" hgap="20" vgap="20" style="-fx-padding: 20;"/>
+        </ScrollPane>
+    </center>
+
+    <bottom>
+        <Button text="+ Nuevo Cliente" onAction="#nuevoCliente" styleClass="nav-button" style="-fx-margin: 20;"/>
+    </bottom>
+</BorderPane>

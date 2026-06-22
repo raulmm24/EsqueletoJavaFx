@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="15" style="-fx-padding: 20; -fx-background-color: #1a1a1a;"
+      xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.iesalandalus.programacion.javafx.controladores.FormularioClienteControlador">
+
+    <Label text="Gestión de Cliente" style="-fx-text-fill: white; -fx-font-size: 18px;"/>
+
+    <TextField fx:id="tfNombre" promptText="Nombre completo" />
+    <TextField fx:id="tfEmail" promptText="Email" />
+    <TextField fx:id="tfTelefono" promptText="Teléfono" />
+
+    <HBox spacing="10" alignment="CENTER_RIGHT">
+        <Button text="Cancelar" onAction="#cerrar" styleClass="nav-button-exit"/>
+        <Button text="Guardar" onAction="#guardar" styleClass="nav-button"/>
+    </HBox>
+</VBox>
